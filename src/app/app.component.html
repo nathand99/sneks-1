@@ -1,0 +1,51 @@
+
+<div style="text-align:center">
+  <h1>
+    Welcome to Memory Jog!
+  </h1>
+  
+  <mat-grid-list cols="2">
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>PHONE CALL</mat-card-title>
+          <mat-card-subtitle><button mat-raised-button color="primary">Button</button></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../assets/phone.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            Call carer.
+          </p>
+        </mat-card-content>
+      </mat-card>      
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>GO HOME</mat-card-title>
+          <mat-card-subtitle><button mat-raised-button color="primary">Button</button></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../assets/house.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            Find a way home.
+          </p>
+        </mat-card-content>
+      </mat-card>      
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider></mat-divider>
+  <h2> Reminders </h2>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+  </mat-form-field>
+
+  
+</div>
+
+
+<router-outlet></router-outlet>

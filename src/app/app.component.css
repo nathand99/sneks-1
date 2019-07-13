@@ -1,0 +1,16 @@
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 25pt;
+
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
